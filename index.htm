@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Técnica IBSM - Portal de Acesso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho do Sistema com o logo2.png -->
+    <header>
+        <div class="header-left">
+            <img src="logo2.png" alt="Logo Central Técnica IBSM" class="logo-img">
+            <div class="header-title">
+                <h1>Central Técnica IBSM</h1>
+                <p>Portal de Acesso à Equipe Técnica</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <img src="logo2.png" alt="Logo IBSM" class="logo-img">
+            <div class="user-icon">👤</div>
+        </div>
+    </header>
+
+    <!-- Corpo / Layout Principal -->
+    <div class="main-container">
+        
+        <!-- Coluna Esquerda: Informações e Imagem da Fachada -->
+        <div class="left-column">
+            <div class="card-welcome">
+                <div class="image-container">
+                    <img src="fachada.jpg" alt="Fachada Principal - Igreja Batista VII de Março">
+                </div>
+                <h2>Bem-vindo à Central Técnica IBSM</h2>
+                <p>Gerencie equipamentos, documente conexões e acompanhe ocorrências de forma centralizada. Exclusivo para voluntários e membros da equipe técnica IBSM.</p>
+            </div>
+        </div>
+
+        <!-- Coluna Direita: Formulários de Autenticação -->
+        <div class="right-column">
+            
+            <!-- Card de Login -->
+            <div class="card-login">
+                <h3>Acesse sua conta</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="email">E-mail ou Usuário</label>
+                        <input type="text" id="email" placeholder="seu.usuario@ibsm.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox"> Lembrar-me
+                        </label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Entrar</button>
+                </form>
+            </div>
+
+            <!-- Card de Solicitação de Acesso -->
+            <div class="card-register">
+                <p>Ainda não tem acesso? <a href="#">Cadastre-se aqui</a></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <a href="#">Sobre</a>
+        <a href="#">Ajuda</a>
+        <a href="#">Política de Privacidade</a>
+    </footer>
+
+</body>
+</html>
