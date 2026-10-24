@@ -1,0 +1,135 @@
+/* Estilos gerais para a página de cadastro */
+body.pagina-cadastro {
+    background-color: #121212;
+    /* Se tiveres a imagem da mesa, descomenta a linha abaixo e ajusta o nome do ficheiro */
+    /* background-image: url('fundo-mg20xu.png'); */
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Cabeçalho simples */
+.cabecalho-principal {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cabecalho-principal h1 {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+}
+
+/* Contentor principal para centralizar o cartão */
+.container-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    padding: 20px;
+}
+
+/* Cartão do formulário (fundo branco por cima do tema escuro) */
+.cartao-form {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 420px;
+    color: #333333;
+}
+
+/* Títulos e subtítulos do formulário */
+.cartao-form h2 {
+    color: #1a252f;
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.cartao-form .subtitulo {
+    text-align: center;
+    color: #666666;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+/* Campos do formulário */
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.campo input:focus {
+    border-color: #0d47a1;
+    outline: none;
+}
+
+/* Botão de ação */
+.botao-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: #0d47a1;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.botao-primary:hover {
+    background-color: #08306b;
+}
+
+/* Link para voltar ao login */
+.link-retorno {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-retorno p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.link-retorno a {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-retorno a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.rodape-principal {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.8rem;
+    color: #777;
+}

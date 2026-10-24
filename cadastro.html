@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Central Técnica IBSM</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body class="pagina-cadastro">
+
+    <header class="cabecalho-principal">
+        <div class="container-header">
+            <!-- Podes colocar o teu logo aqui -->
+            <h1>Central Técnica IBSM</h1>
+        </div>
+    </header>
+
+    <main class="container-principal">
+        <div class="cartao-form">
+            <h2>Solicitar Acesso</h2>
+            <p class="subtitulo">Insere os teus dados para entrar na equipa técnica. O acesso requer validação da liderança.</p>
+
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+                </div>
+
+                <div class="campo">
+                    <label for="confirmar_senha">Confirmar Senha</label>
+                    <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Repita a senha" required>
+                </div>
+
+                <button type="submit" class="botao-primary">Solicitar Cadastro</button>
+            </form>
+
+            <div class="link-retorno">
+                <p>Já tens conta? <a href="index.html">Faça login aqui</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape-principal">
+        <p>&copy; 2026 IBSM Mídia - Desenvolvido para a posteridade.</p>
+    </footer>
+
+</body>
+</html>
