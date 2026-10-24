@@ -1,8 +1,8 @@
 /* Estilos gerais para a página de cadastro */
 body.pagina-cadastro {
     background-color: #121212;
-    /* Se tiveres a imagem da mesa, descomenta a linha abaixo e ajusta o nome do ficheiro */
-    /* background-image: url('fundo-mg20xu.png'); */
+    
+     background-image: url('fundocad.png');
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
