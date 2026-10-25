@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Técnica IBSM - Início</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-dashboard">
+
+    <!-- CABEÇALHO SUPERIOR INSTITUCIONAL -->
+    <header class="topo-institucional">
+        <div class="topo-esquerda">
+            <!-- Botão do Menu Lateral -->
+            <button id="botao-menu" class="botao-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo-area">
+                <img src="logo-ibsmi.png" alt="Logo IBSM" class="logo-img">
+                <div>
+                    <h1>Central Técnica IBSM</h1>
+                    <p>Portal de Acesso à Equipe Técnica</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario-topo-acoes">
+            <!-- Container do Sino de Notificações -->
+            <div class="notificacao-container">
+                <div id="botao-sino" class="sino-icone">
+                    <i class="fas fa-bell"></i>
+                    <span id="badge-contador" class="badge-notificacao">1</span>
+                </div>
+                
+                <!-- Dropdown de Notificações (funcional via JS) -->
+                <div id="dropdown-notificacoes" class="dropdown-notificacoes escondido">
+                    <div class="dropdown-header">
+                        <span>Notificações</span>
+                        <button id="btn-marcar-lida">Marcar como lida</button>
+                    </div>
+                    <div class="dropdown-corpo">
+                        <div class="aviso-item-pop">
+                            <i class="fas fa-bullhorn text-info"></i>
+                            <div>
+                                <p><strong>Aviso da Liderança:</strong> Verificar pilhas dos microfones e cabos antes do ensaio.</p>
+                                <span class="tempo">Hoje, 09:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="perfil-info-topo">
+                <span>Olá, <strong>Carlos</strong></span>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout-wrapper">
+        
+        <!-- MENU LATERAL RETRÁTIL -->
+        <aside id="sidebar-retratil" class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="principal.html" class="ativo"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="equipamentos.html"><i class="fas fa-boxes"></i> Equipamentos</a></li>
+                <li><a href="mesa.html"><i class="fas fa-sliders-h"></i> Mesa Guide</a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <a href="index.html" class="botao-sair"><i class="fas fa-sign-out-alt"></i> Sair</a>
+            </div>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main-content">
+            
+            <section class="banner-boas-vindas">
+                <div class="boas-vindas-texto">
+                    <h2>Bem-vindo, Carlos!</h2>
+                    <p>Central IBSM Técnica — Seu portal centralizado para gerenciar equipamentos e acompanhar a operação.</p>
+                </div>
+            </section>
+
+            <div class="dashboard-grid">
+                <!-- Resumo de Equipamentos (Espaço pronto para receber dados futuros) -->
+                <div class="card-painel">
+                    <div class="card-titulo">
+                        <i class="fas fa-boxes"></i>
+                        <h3>Resumo de Equipamentos</h3>
+                    </div>
+                    <div class="card-corpo">
+                        <div id="total-equipamentos" class="numero-destaque">85</div>
+                        <p class="legenda-destaque">Total de equipamentos cadastrados</p>
+                        <div class="status-lista">
+                            <span class="status-item"><i class="fas fa-circle verde"></i> 78 Operacionais</span>
+                            <span class="status-item"><i class="fas fa-circle amarelo"></i> 4 Em Manutenção</span>
+                            <span class="status-item"><i class="fas fa-circle vermelho"></i> 3 Críticos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atividade Recente -->
+                <div class="card-painel">
+                    <div class="card-titulo">
+                        <i class="fas fa-history"></i>
+                        <h3>Atividade Recente</h3>
+                    </div>
+                    <div class="card-corpo atividade-corpo">
+                        <div class="atividade-item">
+                            <i class="fas fa-edit"></i>
+                            <div>
+                                <p>Atualização cadastral realizada no setor de som</p>
+                                <span class="tempo">Hoje, 10:30</span>
+                            </div>
+                        </div>
+                        <div class="atividade-item">
+                            <i class="fas fa-plus-circle"></i>
+                            <div>
+                                <p>Novo item adicionado ao inventário</p>
+                                <span class="tempo">Ontem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Script de interatividade do Front-end -->
+    <script src="script.js"></script>
+</body>
+</html>
