@@ -2,10 +2,10 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
 // URL limpo do projeto (sem /rest/v1/)
-const SUPABASE_URL = 'https://uqogccyssnbdhxwdyiib.supabase.co'
+const SUPABASE_URL ='https://uqogccyssnbdhxwdyiib.supabase.co'
 
 // Chave 'anon public' clássica tirada da aba Legacy do teu painel
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVxb2djY3lzc25iZGh4d2R5aWliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDEyMzg2ODksImV4cCI6MjA1NzgxNDY4OX0.C16vP9ot1gHGKkmacHPQ1w_dJZbB1yz'
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVxb2djY3lzc25iZGh4dndkeWliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI4ODU3MjIsImV4cCI6MjEwODQ2MTcyMn0.brVLqhohz_yeHtJRu1kEIHNgdMpjUztVzEomOQE813E'
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 
