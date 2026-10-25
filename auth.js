@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     throw error;
                 }
 
-                // Redireciona direto para o login sem alertas chatos
+                // Redireciona direto para o login após salvar com sucesso
                 window.location.href = 'index.html';
 
             } catch (error) {
