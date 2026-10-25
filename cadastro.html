@@ -10,7 +10,6 @@
 
     <header class="cabecalho-principal">
         <div class="container-header">
-            <!-- Podes colocar o teu logo aqui -->
             <h1>Central Técnica IBSM</h1>
         </div>
     </header>
@@ -20,7 +19,8 @@
             <h2>Solicitar Acesso</h2>
             <p class="subtitulo">Insere os teus dados para entrar na equipa técnica. O acesso requer validação da liderança.</p>
 
-            <form action="#" method="post">
+            <!-- Adicionado o id="form-cadastro" e removido o action/method tradicionais -->
+            <form id="form-cadastro">
                 <div class="campo">
                     <label for="nome">Nome Completo</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
@@ -54,8 +54,8 @@
         <p>&copy; 2026 IBSM Mídia - Desenvolvido para a posteridade.</p>
     </footer>
 
-    <!-- Script de Integração (Banco de Dados / Supabase ou Local) -->
-    <script src="auth.js"></script>
+    <!-- Adicionado type="module" para o JavaScript aceitar os imports do Supabase -->
+    <script type="module" src="auth.js"></script>
 
 </body>
 </html>
