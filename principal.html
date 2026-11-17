@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central Técnica IBSM - Início</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="principal.css">
 </head>
 <body class="pagina-dashboard">
 
@@ -17,7 +17,7 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="logo-area">
-                <img src="logo-ibsmi.png" alt="Logo IBSM" class="logo-img">
+                <img src="logo2.png" alt="Logo IBSM" class="logo-img">
                 <div>
                     <h1>Central Técnica IBSM</h1>
                     <p>Portal de Acesso à Equipe Técnica</p>
@@ -30,31 +30,28 @@
             <div class="notificacao-container">
                 <div id="botao-sino" class="sino-icone">
                     <i class="fas fa-bell"></i>
-                    <span id="badge-contador" class="badge-notificacao">1</span>
+                    <span id="badge-contador" class="badge-notificacao" style="display: none;">0</span>
                 </div>
                 
-                <!-- Dropdown de Notificações (funcional via JS) -->
+                <!-- Dropdown de Notificações (Puxa os pendentes do Supabase) -->
                 <div id="dropdown-notificacoes" class="dropdown-notificacoes escondido">
                     <div class="dropdown-header">
-                        <span>Notificações</span>
-                        <button id="btn-marcar-lida">Marcar como lida</button>
+                        <span>Aprovações Pendentes</span>
                     </div>
                     <div class="dropdown-corpo">
-                        <div class="aviso-item-pop">
-                            <i class="fas fa-bullhorn text-info"></i>
-                            <div>
-                                <p><strong>Aviso da Liderança:</strong> Verificar pilhas dos microfones e cabos antes do ensaio.</p>
-                                <span class="tempo">Hoje, 09:00</span>
-                            </div>
-                        </div>
+                        <!-- Os pedidos pendentes aparecem aqui dinamicamente via JS -->
+                        <p style="padding: 15px; text-align: center; color: #777; font-size: 0.85rem;">A carregar...</p>
                     </div>
                 </div>
             </div>
 
-            <div class="perfil-info-topo">
-                <span>Olá, <strong>Carlos</strong></span>
-                <i class="fas fa-user-circle"></i>
-            </div>
+            <!-- Perfil Clicável (Leva para o perfil.html) -->
+            <a href="perfil.html" style="text-decoration: none; color: inherit;">
+                <div class="perfil-info-topo" style="cursor: pointer;">
+                    <span>Olá, <strong id="nome-usuario-topo">Técnico</strong></span>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </a>
         </div>
     </header>
 
@@ -78,13 +75,13 @@
             
             <section class="banner-boas-vindas">
                 <div class="boas-vindas-texto">
-                    <h2>Bem-vindo, Carlos!</h2>
+                    <h2 id="titulo-boas-vindas">Bem-vindo!</h2>
                     <p>Central IBSM Técnica — Seu portal centralizado para gerenciar equipamentos e acompanhar a operação.</p>
                 </div>
             </section>
 
             <div class="dashboard-grid">
-                <!-- Resumo de Equipamentos (Espaço pronto para receber dados futuros) -->
+                <!-- Resumo de Equipamentos -->
                 <div class="card-painel">
                     <div class="card-titulo">
                         <i class="fas fa-boxes"></i>
@@ -129,7 +126,7 @@
         </main>
     </div>
 
-    <!-- Script de interatividade do Front-end -->
-    <script src="script.js"></script>
+    <!-- Script principal como type="module" para suportar a ligação ao Supabase -->
+    <script type="module" src="principal.js"></script>
 </body>
 </html>

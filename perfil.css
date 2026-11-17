@@ -1,0 +1,9 @@
+/* --- AJUSTES COMPLEMENTARES PARA A PÁGINA DE PERFIL --- */
+.dashboard-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.card-painel {
+    width: 100%;
+}
