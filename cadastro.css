@@ -1,8 +1,7 @@
-/* Estilos gerais para a página de cadastro */
+/* --- ESTIZADOS GERAIS PARA A PÁGINA DE CADASTRO --- */
 body.pagina-cadastro {
     background-color: #121212;
-    
-     background-image: url('fundocad.png');
+    background-image: url('fundocad.png');
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -134,44 +133,21 @@ body.pagina-cadastro {
     color: #777;
 }
 
-/* --- RESPONSIVIDADE GLOBAL PARA TELEMÓVEIS --- */
+/* --- RESPONSIVIDADE PARA A PÁGINA DE CADASTRO (TELEMÓVEL) --- */
 @media screen and (max-width: 768px) {
-    /* Esconde a barra lateral no telemóvel por defeito */
-    .sidebar {
-        transform: translateX(-100%);
-        position: fixed;
-        z-index: 1000;
-        height: 100vh;
-        transition: transform 0.3s ease;
-    }
-
-    body.sidebar-fechada .sidebar {
-        transform: translateX(0);
-    }
-
-    /* Ocupa a largura total do ecrã do telemóvel */
-    .layout-wrapper, .main-content {
-        margin-left: 0 !important;
-        width: 100% !important;
-        padding: 10px !important;
-    }
-
-    /* Empilha os cartões verticalmente */
-    .dashboard-grid {
-        grid-template-columns: 1fr !important;
-        gap: 15px !important;
-    }
-
-    /* Ajusta o topo para ecrãs pequenos */
-    .topo-institucional {
-        flex-direction: column;
-        height: auto;
+    .container-principal {
         padding: 10px;
-        gap: 10px;
+        min-height: auto;
+        margin: 20px 0;
     }
 
-    .topo-esquerda, .usuario-topo-acoes {
-        width: 100%;
-        justify-content: space-between;
+    .cartao-form {
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .cabecalho-principal h1 {
+        font-size: 1.2rem;
+        padding: 0 10px;
     }
 }

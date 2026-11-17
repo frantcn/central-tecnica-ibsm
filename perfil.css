@@ -7,6 +7,7 @@
 .card-painel {
     width: 100%;
 }
+
 /* --- RESPONSIVIDADE GLOBAL PARA TELEMÓVEIS --- */
 @media screen and (max-width: 768px) {
     /* Esconde a barra lateral no telemóvel por defeito */
